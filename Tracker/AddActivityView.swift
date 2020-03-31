@@ -35,6 +35,7 @@ struct AddActivityView: View {
         .navigationViewStyle(StackNavigationViewStyle())
     }
     
+    /// Saves Activity to array
     func saveActivity() {
         guard !name.isEmpty else {
             alertTitle = "Error!"

@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Data class for automatic saves to UserDefaults and reads
 class Activities: ObservableObject {
     @Published var items: [Activity] {
         didSet {

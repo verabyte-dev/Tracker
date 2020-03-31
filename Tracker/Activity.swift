@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Activity properties
 struct Activity: Codable, Identifiable {
     var id = UUID()
     var name: String

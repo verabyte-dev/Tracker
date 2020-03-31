@@ -48,12 +48,14 @@ struct ActivityDetailView: View {
         self.activity = activity
     }
     
+    /// Increments activity counter
     func incrementCounter() {
         counter = activity.counter
         counter += 1
         updateActivities()
     }
     
+    /// Updates Activity
     func updateActivities() {
         if let index = activities.items.firstIndex(where: { $0.id == activity.id }) {
             var item = activities.items[index]
